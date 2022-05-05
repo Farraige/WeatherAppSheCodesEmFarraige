@@ -1,0 +1,54 @@
+.container {
+  border-radius: 10px 10px;background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  font-family: "Roboto", sans-serif;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-shadow: 5px 5px 10px rgba(245, 120, 16, 0.4);
+  color: #f57810;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 54px;
+  text-align: center;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.todaysWeather {
+  font-size: 52px;
+}
+.currently {
+  font-size: 52px;
+}
+
+.daily-temp {
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+}
+
+.city-search {
+  position: relative;
+}
+.todays-icon {
+  position: relative;
+  border: 3px hidden rgba(55, 55, 55, 0.4);
+  border-radius: 150px;
+}
+.high-and-low {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.col {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+i {
+  color: #ffca01;
+}

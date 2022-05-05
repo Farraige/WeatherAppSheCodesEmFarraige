@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e79a26b59.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="weather.css" />
+    <title>Weather App</title>
+  </head>
+  <script src="weather.js"></script>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h1 id="city">
+            city
+          </h1>
+        </div>
+        <div class="col-6 text-end">
+          <div class="city-search">
+            <form id="search-form">
+              <input type="text" placeholder="Enter a city" id="city-input" />
+
+              <button><i class="fa-solid fa-magnifying-glass"> </i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="date"></h2>
+
+      <div class="row mb-4">
+        <div class="col-6">
+          <div class="d-flex align-items-center">
+            <div class="todays-weather">
+              <strong id="todaysWeather">20°</strong>
+              <p id="currently">Partly Sunny</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-4">
+              <p class="daily-temp"><strong>High</strong><br />54°</p>
+            </div>
+            <div class="col-4">
+              <p class="daily-temp"><strong>Wind</strong><br />8mph</p>
+            </div>
+            <div class="col-4">
+              <p class="daily-temp"><strong>Sunrise</strong><br />7:15am</p>
+            </div>
+            <div class="col-4">
+              <p class="daily-temp">
+                <strong>Low</strong><br />31°
+                <br />
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="daily-temp"><strong>Rain</strong><br />20%</p>
+            </div>
+            <div class="col-4">
+              <p class="daily-temp"><strong>Sunset</strong><br />7:27pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-fri">Tue</div>
+        <div class="col col-sat">Wed</div>
+        <div class="col col-sun">Thu</div>
+        <div class="col col-mon">Fri</div>
+        <div class="col col-tue">Sat</div>
+      </div>
+      <div class="row">
+        <div class="col col-tue">
+          <i class="fa-solid fa-cloud-sun"></i>
+        </div>
+        <div class="col col-wed">
+          <i class="fa-solid fa-sun sun"></i>
+        </div>
+        <div class="col col-thu">
+          <i class="fa-solid fa-cloud-sun-rain"></i>
+        </div>
+        <div class="col col-fri">
+          <i class="fa-solid fa-cloud-showers-heavy"></i>
+        </div>
+        <div class="col col-sat">
+          <i class="fa-solid fa-cloud-showers-heavy"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-tue"><strong>64°/</strong> 41°</div>
+        <div class="col col-wed"><strong>58°/</strong> 43°</div>
+        <div class="col col-thu"><strong>53°/</strong> 37°</div>
+        <div class="col col-fri"><strong>67°/</strong> 51°</div>
+        <div class="col col-sat"><strong>51°/</strong> 31°</div>
+      </div>
+    </div>
+  </body>
+</html>
