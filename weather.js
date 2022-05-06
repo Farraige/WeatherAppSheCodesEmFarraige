@@ -49,6 +49,10 @@ console.log(response);
 let todaysWeather = Math.round(response.data.main.temp);
 let temperatureElement = document.querySelector("#todaysWeather");
 let description = document.querySelector("#currently");
+let wind = Math.round(response.data.wind.deg);
+let speed = (response.data.wind.speed);
+let windElement = document.querySelector("#wind");
+windElement.innerHTML = `Wind ${wind} Speed: ${speed}`;
 temperatureElement.innerHTML = `${todaysWeather}℃`;
 description.innerHTML = response.data.weather[0].description;
 }
