@@ -16,13 +16,13 @@ h1 {
 }
 h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 32px;
 }
-.todaysWeather {
-  font-size: 52px;
+#todaysWeather {
+  font-size: 32px;
 }
-.currently {
-  font-size: 52px;
+#currently {
+  text-transform: capitalize;
 }
 .nameHolder {
   color: blueviolet;

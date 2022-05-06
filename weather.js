@@ -49,10 +49,21 @@ console.log(response);
 let todaysWeather = Math.round(response.data.main.temp);
 let temperatureElement = document.querySelector("#todaysWeather");
 let description = document.querySelector("#currently");
-let wind = Math.round(response.data.wind.deg);
 let speed = (response.data.wind.speed);
+let humiditytTemp= Math.round(response.data.main.humidity);
+let currentlyFeelsLike = Math.round(response.data.main.feels_like);
+let high = Math.round(response.data.main.temp_max);
+let low = Math.round(response.data.main.temp_min);
+let humidity = document.querySelector("#humidity");
+let tHigh = document.querySelector("#tempHigh");
+let tLow = document.querySelector("#tempLow");
+let feelsLike = document.querySelector("#feelsLike");
 let windElement = document.querySelector("#wind");
-windElement.innerHTML = `Wind ${wind} Speed: ${speed}`;
+windElement.innerHTML = `Wind ${speed}MPH`;
+humidity.innerHTML = `Humidity ${humiditytTemp}%`;
+tHigh.innerHTML= `High ${high}℃`;
+tLow.innerHTML= `Low ${low}℃`
+feelsLike.innerHTML = `Feels like ${currentlyFeelsLike}℃`
 temperatureElement.innerHTML = `${todaysWeather}℃`;
 description.innerHTML = response.data.weather[0].description;
 }
