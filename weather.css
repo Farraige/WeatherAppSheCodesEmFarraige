@@ -24,6 +24,10 @@ h2 {
 .currently {
   font-size: 52px;
 }
+.nameHolder {
+  color: blueviolet;
+  margin-top: 25px;
+}
 
 .daily-temp {
   font-family: "Roboto", sans-serif;
